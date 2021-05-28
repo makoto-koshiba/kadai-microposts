@@ -32,6 +32,7 @@ class UsersController extends Controller
         // ユーザ詳細ビューでそれを表示
         return view('users.show', [
             'user' => $user,
+            'microposts'=>$microposts,
         ]);
     }
      /**

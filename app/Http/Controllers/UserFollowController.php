@@ -19,7 +19,8 @@ class UserFollowController extends Controller
         // 前のURLへリダイレクトさせる
         return back();
     }
-     /**
+
+    /**
      * ユーザをアンフォローするアクション。
      *
      * @param  $id  相手ユーザのid
