@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class MicropostsController extends Controller
 {
    public function index()
@@ -24,6 +25,7 @@ class MicropostsController extends Controller
         // Welcomeビューでそれらを表示
         return view('welcome', $data);
     }
+    
      public function store(Request $request)
     {
         // バリデーション
@@ -52,4 +54,5 @@ class MicropostsController extends Controller
         // 前のURLへリダイレクトさせる
         return back();
     }
+    
 }

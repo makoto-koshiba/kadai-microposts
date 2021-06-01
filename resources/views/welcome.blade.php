@@ -1,18 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-     @if (Auth::check())
+    @if (Auth::check())
         <div class="row">
             <aside class="col-sm-4">
-               {{-- ユーザ情報 --}}
+                {{-- ユーザ情報 --}}
                 @include('users.card')
-                  
             </aside>
             <div class="col-sm-8">
-                {{-- 投稿一覧 --}}
-                 {{-- 投稿フォーム --}}
+                {{-- 投稿フォーム --}}
                 @include('microposts.form')
+                {{-- 投稿一覧 --}}
                 @include('microposts.microposts')
+                
+             
             </div>
         </div>
     @else
